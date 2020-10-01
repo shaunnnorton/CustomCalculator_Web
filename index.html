@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Time Since Keanu</title>
+</head>
+<body>
+    <form action="#">
+        <h1>Time Since Keanu's</h1>
+        <select name="day" id="selector">
+            <option value="September 2, 1964" name="Birthday">Birthday</option>
+            <option value="January 31, 1986" name="First Movie">First Movie</option>
+            <option value="June 9, 2019" name="Cyberpunk 2077">Cyberpunk 2077 Reveal</option>
+        </select>
+        <label for="date" id="date">
+            <span>Date</span> 
+            <input type="date" id='date_input' value="" pattern="[0-9]{2}[-,/][0-9]{2}[-,/][0-9]{4}" placeholder="09/02/1964">
+            <button id='today' type='button'>Today</button>
+        </label>
+        <label>
+            <input type="radio" name="time" class="time" value='days'> Days 
+            <input type="radio" name="time" class="time" value='weeks'> Weeks 
+            <input type="radio" name="time" class="time" value='seconds'> Seconds 
+        </label>
+        <button id="Calc" type="button">Calculate</button>
+        <span id="Final"></span>
+    </form>
+    <script src="main.js"></script>    
+</body>
+</html>
